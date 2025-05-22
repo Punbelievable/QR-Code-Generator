@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #f5f7fa;
+  padding: 20px;
+}
+
+h1 {
+  color: #333;
+  margin-bottom: 30px;
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+.container {
+  width: 100%;
+  max-width: 500px;
+  background-color: white;
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+#text {
+  padding: 12px 15px;
+  border: 2px solid #e1e5ee;
+  border-radius: 6px;
+  font-size: 16px;
+  transition: border-color 0.3s;
+}
+
+/* Change border color on focus */
+#text:focus {
+  outline: none;
+  border-color: #4c6ef5;
+}
+
+.button-group {
+  display: flex;
+  gap: 10px;
+}
+
+button {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+#generateBtn {
+  background-color: #4c6ef5;
+  color: white;
+  flex: 1;
+}
+
+#generateBtn:hover {
+  background-color: #3b5bdb;
+}
+
+#clearBtn {
+  background-color: #e9ecef;
+  color: #495057;
+}
+
+#clearBtn:hover {
+  background-color: #dee2e6;
+}
+
+#qrcode {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  min-height: 200px;
+}
+
+/* Make sure the QR code is centered and has some space */
+#qrcode img {
+  margin: 0 auto;
+  display: block;
+}
